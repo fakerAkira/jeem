@@ -1,0 +1,114 @@
+
+body {
+    background-color: #ffb6c1; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 2000px;
+    
+}
+
+
+#message-container {
+    width: 48%;
+    text-align: left;
+}
+
+h1 {
+    color: #d63384; 
+    font-size: 50px;
+    margin-bottom: 10px;
+
+}
+
+.motivational-message {
+    font-size: 18px;
+    color: #6d214f; 
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#quote-container {
+    width: 48%;
+    text-align: center;
+}
+
+.quote-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    font-size: 20px;
+    font-style: italic;
+    color: #333;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #ff69b4; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff1493; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        text-align: center;
+    }
+    #message-container, #quote-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #message-container {
+        text-align: center;
+    }
+}
+#animated-title {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#animated-title span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeIn 0.9s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
